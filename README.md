@@ -1,6 +1,6 @@
-# React + TypeScript + Vite Template
+# ⚡ React + TypeScript + Vite Starter
 
-A modern, minimal, and extensible template for building React applications with TypeScript, Vite, Tailwind CSS, and a rich set of developer tools.
+A modern, minimal, and extensible starter for building React applications with TypeScript, Vite, Tailwind CSS, and a rich set of developer tools.
 
 ---
 
@@ -9,21 +9,21 @@ A modern, minimal, and extensible template for building React applications with 
 - **React 19** with [TypeScript](https://www.typescriptlang.org/)
 - [Vite](https://vitejs.dev/) for fast development and builds
 - [Tailwind CSS](https://tailwindcss.com/) for utility-first styling
-- [Radix UI](https://www.radix-ui.com/) and [Lucide Icons](https://lucide.dev/) for accessible UI primitives and icons
+- [shadcn/ui](https://ui.shadcn.com/) and [Lucide Icons](https://lucide.dev/) for accessible and customizable UI components
 - [React Router v7](https://reactrouter.com/) for routing
 - [React Hook Form](https://react-hook-form.com/) for forms
 - [Zustand](https://zustand-demo.pmnd.rs/) for state management
 - [SWR](https://swr.vercel.app/) for data fetching
 - [ESLint](https://eslint.org/) with recommended, React, and TypeScript rules
-- [Class variance authority](https://cva.style/) and [clsx](https://github.com/lukeed/clsx) for class management
+- [Class Variance Authority](https://cva.style/) and [clsx](https://github.com/lukeed/clsx) for manageable class names
 - [Sonner](https://sonner.emilkowal.ski/) for notifications
-- [@elhamdev/tracejs](https://www.npmjs.com/package/@elhamdev/tracejs) for debugging
+- [@elhamdev/tracejs](https://www.npmjs.com/package/@elhamdev/tracejs)
 
 ---
 
 ## Getting Started
 
-### 1. Install dependencies
+### 1️⃣ Install Dependencies
 
 ```sh
 pnpm install
@@ -33,7 +33,7 @@ npm install
 yarn install
 ```
 
-### 2. Start the development server
+### 2️⃣ Start the Development Server
 
 ```sh
 pnpm dev
@@ -43,13 +43,11 @@ npm run dev
 yarn dev
 ```
 
-The app will be available at [http://localhost:5173](http://localhost:5173) (or the port Vite chooses).
-
----
+The app will be available at http://localhost:5173 (or the port configured by Vite).
 
 ## Project Structure
 
-```text
+```
 src/
   components/      # Reusable UI components
   hooks/           # Custom React hooks
@@ -60,66 +58,54 @@ src/
 public/            # Static assets
 ```
 
-- Aliases like `@/components` are set up for cleaner imports.
-
----
-
 ## Scripts
 
-- `dev` – Start Vite dev server
-- `build` – Type-check and build for production
+- `dev` – Start the Vite dev server
+- `build` – Type‑check and build for production
 - `preview` – Preview the production build
-- `lint` – Run ESLint on the codebase
-
----
+- `lint` – Run ESLint across the codebase
 
 ## Linting & Formatting
 
-- ESLint is configured for TypeScript, React, and hooks.
-- To lint the codebase:
+ESLint is configured for TypeScript, React, and hooks. To lint the codebase:
 
-  ```sh
-  pnpm lint
-  ```
+```sh
+pnpm lint
+```
 
-- ESLint config is in `eslint.config.js`. Type-aware rules are enabled for stricter checks.
-
----
+ESLint settings can be found in `eslint.config.js`. Type‑aware rules are enabled for stricter checks.
 
 ## Tailwind CSS
 
-- Tailwind is integrated via `@tailwindcss/vite`.
-- Global styles are in `src/styles/globals.css`.
-- You can customize Tailwind via `tailwind.config.js` (if present).
-
----
+Tailwind is integrated via `@tailwindcss/vite`. Global styles are located in `src/styles/globals.css`. Tailwind can be configured in `tailwind.config.js` (if present).
 
 ## Customization
 
-- **UI Components:** Uses [Radix UI](https://www.radix-ui.com/) and [Lucide Icons](https://lucide.dev/).
-- **State Management:** [Zustand](https://zustand-demo.pmnd.rs/) is included for global state.
-- **Data Fetching:** [SWR](https://swr.vercel.app/) is included for remote data.
-
----
+- **UI Components:** Uses [shadcn/ui](https://ui.shadcn.com/) and Hero icons react for highly customizable and accessible interfaces.
+- **State Management:** Zustand is included for global state.
+- **Data Fetching:** SWR is included for seamless data fetching and caching.
 
 ## TypeScript
 
 - Strict mode is enabled.
-- Project references are set up for scalable builds.
-- Aliases are configured in `tsconfig.json` and `vite.config.ts`.
-
----
+- Project references configured for scalability.
+- Import aliases configured in `tsconfig.json` and `vite.config.ts`.
 
 ## Useful Links
 
 - [Vite Documentation](https://vitejs.dev/guide/)
 - [React Documentation](https://react.dev/)
-- [TypeScript Handbook](https://www.typescriptlang.org/docs/)
-- [Tailwind CSS Docs](https://tailwindcss.com/docs/installation)
-- [Radix UI Primitives](https://www.radix-ui.com/primitives/docs/overview/introduction)
-
----
+- [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/overview.html)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs/overview)
+- [shadcn/ui Documentation](https://ui.shadcn.com/docs/installation)
+- [Lucide Icons](https://lucide.dev/docs/overview/)
+- [SWR Documentation](https://swr.vercel.app/docs/getting-started)
+- [Zustand Documentation](https://zustand-demo.pmnd.rs/)
+- [React Router Documentation](https://reactrouter.com/)
+- [React Hook Form Documentation](https://react-hook-form.com/get-started)
 
 ## License
 
 This project is licensed under the MIT License.
+
+---
