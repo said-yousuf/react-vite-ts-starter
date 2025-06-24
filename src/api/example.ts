@@ -1,5 +1,3 @@
-// import { postRequest } from '../src/lib/http';
-
 /**
  * This file provides API functions for interacting with the '/example' endpoint.
  *
@@ -22,4 +20,12 @@
  */
 // export function exampleApiFunction(payload: any) {
 //     return postRequest('/example', payload);
+// }
+
+/**
+ * The GET follows this structure
+ */
+
+// export function useGetExample() {
+//   return useSWR<ExampleResponse>(['example'], () => getRequest('/example'));
 // }
