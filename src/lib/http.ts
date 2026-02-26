@@ -26,20 +26,6 @@ http.interceptors.request.use(async (request: any) => {
     if (!request.headers) {
       request.headers = {};
     }
-    // FingerprintService integration (optional):
-    // To enable device/browser fingerprinting, install the package:
-    //   npm install @elhamdev/tracejs
-    //
-    // Then, uncomment the following lines to add a unique device fingerprint
-    // to each request header as 'X-Device-Id'. This can be used for analytics,
-    // fraud prevention, or user identification. Ensure compliance with privacy
-    // regulations and user consent requirements before enabling.
-    //
-    // import { FingerprintService } from '@elhamdev/tracejs';
-    // const fingerprintService = new FingerprintService();
-    // const fingerprint = fingerprintService.getDetailedFingerprint;
-    // (request.headers as any)['X-Device-Id'] = fingerprint;
-
     // Retrieve and set the Authorization token
     const token = useAuthStore.getState().token;
     if (token) {
