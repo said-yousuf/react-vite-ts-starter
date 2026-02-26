@@ -45,7 +45,7 @@ export function DataTablePagination({
           <ChevronDoubleLeftIcon className="w-4 h-4" />
         </Button>
         <Button
-          variant="titiary"
+          variant="tertiary"
           size="icon"
           onClick={() => onPageChange(currentPage - 1)}
           disabled={currentPage === 1 || noRecords}
@@ -60,7 +60,7 @@ export function DataTablePagination({
           noRecords={noRecords}
         />
         <Button
-          variant="titiary"
+          variant="tertiary"
           size="icon"
           onClick={() => onPageChange(currentPage + 1)}
           disabled={currentPage === totalPages || noRecords}

@@ -24,7 +24,7 @@ export function PageNumbers({
       if (noRecords) {
         return (
           <Button
-            variant="titiary"
+            variant="tertiary"
             className="flex items-center justify-center p-0 rounded-full size-8"
             disabled
           >
@@ -36,7 +36,7 @@ export function PageNumbers({
         pageButtons.push(
           <Button
             key={i}
-            variant={'titiary'}
+            variant={'tertiary'}
             className={cn(
               'flex items-center justify-center p-0 rounded-full size-8',
               i === currentPage && 'bg-gray-100'
@@ -56,7 +56,7 @@ export function PageNumbers({
         pageButtons.push(
           <Button
             key={i}
-            variant={'titiary'}
+            variant={'tertiary'}
             className="flex items-center justify-center p-0 rounded-full size-8"
             onClick={() => onPageChange(i)}
           >
@@ -69,7 +69,7 @@ export function PageNumbers({
         pageButtons.push(
           <Button
             key="ellipsis"
-            variant="titiary"
+            variant="tertiary"
             className="flex items-center justify-center p-0 rounded-full size-8"
             onClick={() => onPageChange(startPage + maxVisiblePages)}
           >
@@ -82,7 +82,7 @@ export function PageNumbers({
         pageButtons.push(
           <Button
             key={totalPages}
-            variant={totalPages === currentPage ? 'primary' : 'titiary'}
+            variant={totalPages === currentPage ? 'primary' : 'tertiary'}
             className="flex items-center justify-center p-0 rounded-full size-8"
             onClick={() => onPageChange(totalPages)}
           >
